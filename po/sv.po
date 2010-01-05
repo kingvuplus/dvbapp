@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 18:09+0100\n"
+"POT-Creation-Date: 2009-12-28 20:46+0100\n"
 "PO-Revision-Date: 2009-10-12 11:27+0100\n"
 "Last-Translator: WeeGull <weegull@hotmail.com>\n"
 "Language-Team: WeeGull <weegull@hotmail.com>\n"
@@ -49,6 +49,11 @@ msgstr ""
 
 msgid ""
 "\n"
+"Manage extensions or plugins for your Dreambox"
+msgstr ""
+
+msgid ""
+"\n"
 "Online update of your Dreambox software."
 msgstr ""
 "\n"
@@ -84,10 +89,8 @@ msgstr ""
 
 msgid ""
 "\n"
-"Scan for local packages and install them."
+"Scan for local extensions and install them."
 msgstr ""
-"\n"
-"Sök efter lokala paket och installera dem."
 
 msgid ""
 "\n"
@@ -105,13 +108,6 @@ msgstr ""
 "\n"
 "Systemet kommer starta om efter återläsningen!"
 
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Visa, installera och ta bort tillgängliga eller installerade paket."
-
 msgid " "
 msgstr " "
 
@@ -125,7 +121,7 @@ msgid " updates available."
 msgstr " Uppdateringar tillgängliga."
 
 msgid " wireless networks found!"
-msgstr ""
+msgstr " trådlöst nätverk hittat!"
 
 msgid "#000000"
 msgstr ""
@@ -223,7 +219,7 @@ msgid "1"
 msgstr ""
 
 msgid "1 wireless network found!"
-msgstr ""
+msgstr "1 trådlöst nätverk hittat!"
 
 msgid "1.0"
 msgstr "1.0"
@@ -306,6 +302,15 @@ msgstr ""
 msgid "9"
 msgstr ""
 
+msgid "<Current movielist location>"
+msgstr ""
+
+msgid "<Default movie location>"
+msgstr ""
+
+msgid "<Last timer location>"
+msgstr ""
+
 msgid "<unknown>"
 msgstr "<okänd>"
 
@@ -372,6 +377,15 @@ msgstr ""
 #, python-format
 msgid "A required tool (%s) was not found."
 msgstr "Ett verktyg (%s) som behövs kunde inte hittas."
+
+msgid "A search for available updates is currently in progress."
+msgstr ""
+
+msgid ""
+"A second configured interface has been found.\n"
+"\n"
+"Do you want to disable the second network interface?"
+msgstr ""
 
 msgid ""
 "A sleep timer wants to set your\n"
@@ -498,6 +512,12 @@ msgstr "Avancerat"
 
 msgid "Advanced Options"
 msgstr "Avancerade Inställningar"
+
+msgid "Advanced Software"
+msgstr ""
+
+msgid "Advanced Software Plugin"
+msgstr ""
 
 msgid "Advanced Video Enhancement Setup"
 msgstr "Avancerad Videoförbättring Installation "
@@ -829,7 +849,7 @@ msgid "Choose Tuner"
 msgstr "Välj tuner"
 
 msgid "Choose a wireless network"
-msgstr ""
+msgstr "Välj ett trådlöst nätverk"
 
 msgid "Choose backup files"
 msgstr "Välj backupfil"
@@ -997,9 +1017,6 @@ msgstr "Konstellation"
 msgid "Content does not fit on DVD!"
 msgstr "Innehåll för stort för en DVD!"
 
-msgid "Continue"
-msgstr "Forsätt"
-
 msgid "Continue in background"
 msgstr "Fortsätta i bakgrund"
 
@@ -1014,6 +1031,9 @@ msgstr "Kunde inte ansluta till Dreambox .NFI image feed Server:"
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Kunde inte ladda media! Ingen disk istoppad?"
+
+msgid "Could not open Picture in Picture"
+msgstr ""
 
 #, python-format
 msgid "Couldn't record due to conflicting timer %s"
@@ -1142,6 +1162,9 @@ msgstr "Grund"
 msgid "Default Settings"
 msgstr "Grundinställningar"
 
+msgid "Default movie location"
+msgstr ""
+
 msgid "Default services lists"
 msgstr "Grundservicelista"
 
@@ -1180,6 +1203,9 @@ msgstr "Avmarkera"
 msgid "Destination directory"
 msgstr "Målbibliotek"
 
+msgid "Details for extension: "
+msgstr ""
+
 msgid "Detected HDD:"
 msgstr "Hittad hårddisk:"
 
@@ -1202,7 +1228,7 @@ msgid "DiSEqC repeats"
 msgstr "DiSEqC repetetioner"
 
 msgid "DiSEqC-Tester settings"
-msgstr ""
+msgstr "DiSEqC-Tester inställningar"
 
 msgid "Dialing:"
 msgstr "Ringer upp:"
@@ -1218,7 +1244,7 @@ msgid "Directory %s nonexistent."
 msgstr "Bibliotek %s finns ej."
 
 msgid "Directory browser"
-msgstr ""
+msgstr "Biblioteksbläddrare"
 
 msgid "Disable"
 msgstr "Avaktivera"
@@ -1498,9 +1524,8 @@ msgstr "Aktivera timer"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#, python-format
-msgid "Encrypted: %s"
-msgstr "Krypterat: %s"
+msgid "Encrypted: "
+msgstr ""
 
 msgid "Encryption"
 msgstr "Kryptering"
@@ -1515,7 +1540,7 @@ msgid "Encryption Type"
 msgstr "Krypteringstyp"
 
 msgid "Encryption:"
-msgstr ""
+msgstr "Kryptering:"
 
 msgid "End time"
 msgstr "Sluttid"
@@ -1636,8 +1661,17 @@ msgstr "Utökad Nätverksinstallationsplugin..."
 msgid "Extended Setup..."
 msgstr "Utökad installation..."
 
+msgid "Extended Software"
+msgstr ""
+
+msgid "Extended Software Plugin"
+msgstr ""
+
 msgid "Extensions"
 msgstr "Utökningar"
+
+msgid "Extensions management"
+msgstr ""
 
 msgid "FEC"
 msgstr "FEC"
@@ -1647,6 +1681,18 @@ msgstr "Fabriksåterställning"
 
 msgid "Failed"
 msgstr "Misslyckades"
+
+#, python-format
+msgid "Fan %d"
+msgstr ""
+
+#, python-format
+msgid "Fan %d PWM"
+msgstr ""
+
+#, python-format
+msgid "Fan %d Voltage"
+msgstr ""
 
 msgid "Fast"
 msgstr "Snabb"
@@ -1694,8 +1740,8 @@ msgstr "Flash"
 msgid "Flashing failed"
 msgstr "Flashning misslyckades"
 
-msgid "Following tasks will be done after you press continue!"
-msgstr "Följande uppgifter kommer utföras efter du trycker på forsätta!"
+msgid "Following tasks will be done after you press OK!"
+msgstr ""
 
 msgid "Format"
 msgstr "Format"
@@ -1756,14 +1802,14 @@ msgstr "Gateway"
 msgid "General AC3 Delay"
 msgstr "Generisk AC3 fördröjning"
 
-msgid "General AC3 delay"
-msgstr "Generisk AC3 fördröjning"
+msgid "General AC3 delay (ms)"
+msgstr ""
 
 msgid "General PCM Delay"
 msgstr "Generisk PCM fördröjning"
 
-msgid "General PCM delay"
-msgstr "Generisk PCM fördröjning"
+msgid "General PCM delay (ms)"
+msgstr ""
 
 msgid "Genre"
 msgstr "Genre"
@@ -1913,6 +1959,9 @@ msgstr "Information"
 msgid "Init"
 msgstr "Initiera"
 
+msgid "Initial location in new timers"
+msgstr ""
+
 msgid "Initialization..."
 msgstr "Initiering..."
 
@@ -1967,15 +2016,17 @@ msgstr "Installerar paketinnehåll... Vänligen vänta..."
 msgid "Instant Record..."
 msgstr "Direktinspelning..."
 
+msgid "Instant record location"
+msgstr ""
+
 msgid "Integrated Ethernet"
 msgstr "Integrerat nätverk"
 
 msgid "Integrated Wireless"
 msgstr "Inbyggt Trådlöst"
 
-#, python-format
-msgid "Interface: %s"
-msgstr "Kort: %s"
+msgid "Interface: "
+msgstr ""
 
 msgid "Intermediate"
 msgstr "Normal"
@@ -2109,6 +2160,9 @@ msgstr "Lokalt Nätverk"
 msgid "Location"
 msgstr "Sökväg"
 
+msgid "Location for instant recordings"
+msgstr ""
+
 msgid "Lock:"
 msgstr "Lås:"
 
@@ -2142,6 +2196,9 @@ msgstr "Gör denna markör till 'ut' punkt"
 msgid "Make this mark just a mark"
 msgstr "Behåll denna markör som vanlig markör"
 
+msgid "Manage extensions"
+msgstr ""
+
 msgid "Manage your receiver's software"
 msgstr "Hantera din mottagares mjukvara"
 
@@ -2160,9 +2217,8 @@ msgstr "Marginal efter inspelning (i minuter)"
 msgid "Margin before record (minutes)"
 msgstr "Marginal innan inspelning (i minuter)"
 
-#, python-format
-msgid "Max. Bitrate: %s"
-msgstr "Max. Bitrate: %s"
+msgid "Max. Bitrate: "
+msgstr ""
 
 msgid "Media player"
 msgstr "Mediaspelare"
@@ -2224,6 +2280,9 @@ msgstr "Flytta öst"
 msgid "Move west"
 msgstr "Flytta väst"
 
+msgid "Movie location"
+msgstr ""
+
 msgid "Movielist menu"
 msgstr "Filmlista meny"
 
@@ -2247,6 +2306,9 @@ msgstr "Inte tillgänglig"
 
 msgid "NEXT"
 msgstr "NÄSTA"
+
+msgid "NFI Image Flashing"
+msgstr ""
 
 msgid "NFI image flashing completed. Press Yellow to Reboot!"
 msgstr "NFI image flashning klar. Tryck Gul för omstart!"
@@ -2337,7 +2399,7 @@ msgid "No 50 Hz, sorry. :("
 msgstr "Ingen 50 Hz, tyvärr. :("
 
 msgid "No Connection"
-msgstr ""
+msgstr "Ingen anslutning"
 
 msgid "No HDD found or HDD not initialized!"
 msgstr "Ingen hårddisk hittad eller initierad!"
@@ -2367,11 +2429,19 @@ msgstr "Inga visningsbara filer hittade på detta media!"
 msgid "No event info found, recording indefinitely."
 msgstr "Ingen programinfo hittades, inspelning oändlig."
 
+msgid ""
+"No fast winding possible yet.. but you can use the number buttons to skip "
+"forward/backward!"
+msgstr ""
+
 msgid "No free tuner!"
 msgstr "Ingen ledig tuner!"
 
-msgid "No networks found"
+msgid "No network connection available."
 msgstr ""
+
+msgid "No networks found"
+msgstr "Inget nätverk hittat"
 
 msgid ""
 "No packages were upgraded yet. So you can check your network and try again."
@@ -2388,6 +2458,9 @@ msgstr "Ingen satellit frontend funnen!!"
 
 msgid "No tags are set on these movies."
 msgstr "Ingen märkning är gjord på dessa filmer."
+
+msgid "No to all"
+msgstr ""
 
 msgid "No tuner is configured for use with a diseqc positioner!"
 msgstr "Ingen tuner är konfigurerad för motor diseqc!"
@@ -2421,7 +2494,7 @@ msgstr ""
 "Om du anger 'Nej' här kommer installationsskyddet vara avaktiverat!"
 
 msgid "No wireless networks found! Please refresh."
-msgstr ""
+msgstr "Inget trådlöst nätverk hittat! Vänligen uppdatera."
 
 msgid ""
 "No working local network adapter found.\n"
@@ -2466,7 +2539,7 @@ msgid "No, scan later manually"
 msgstr "Nej, sök manuellt senare"
 
 msgid "No, send them never"
-msgstr "Ne, skicka aldrig"
+msgstr "Nej, skicka aldrig"
 
 msgid "None"
 msgstr "Inga"
@@ -2541,6 +2614,9 @@ msgstr "Online uppgradering"
 msgid "Only Free scan"
 msgstr "Bara Fri sökning"
 
+msgid "Only extensions."
+msgstr ""
+
 msgid "Optionally enter your name if you want to."
 msgstr "Valfritt ange ditt namn om du vill."
 
@@ -2552,9 +2628,6 @@ msgstr "PAL"
 
 msgid "PIDs"
 msgstr "PIDs"
-
-msgid "Package details for: "
-msgstr "Paketdetaljer för: "
 
 msgid "Package list update"
 msgstr "Paketlista uppdatering"
@@ -2671,6 +2744,8 @@ msgid ""
 "values.\n"
 "When you are ready press OK to continue."
 msgstr ""
+"Vänligen konfigurera din Internet anslutning med att fylla i begärda fält.\n"
+"När du är klar tryck OK för att forsätta."
 
 msgid ""
 "Please disconnect all USB devices from your Dreambox and (re-)attach the "
@@ -2774,6 +2849,9 @@ msgid ""
 "\n"
 "Please press OK to continue."
 msgstr ""
+"Vänligen välj det trådlösa nätverk du vill ansluta till.\n"
+"\n"
+"Vänligen tryck OK för att forsätta."
 
 msgid "Please set up tuner B"
 msgstr "Vänligen installera tuner B"
@@ -2833,9 +2911,6 @@ msgstr "Vänligen vänta... Laddar lista..."
 
 msgid "Plugin browser"
 msgstr "Plugin hanterare"
-
-msgid "Plugin manager"
-msgstr "Pluginhanterare"
 
 msgid "Plugin manager activity information"
 msgstr "Pluginhanterare aktiviteksinformation"
@@ -3031,6 +3106,9 @@ msgstr "Inspelade filer..."
 msgid "Recording"
 msgstr "Spelar in"
 
+msgid "Recording paths..."
+msgstr ""
+
 msgid "Recording(s) are in progress or coming up in few seconds!"
 msgstr "Inspelning(ar) pågår eller ska påbörjas inom några sekunder!"
 
@@ -3042,9 +3120,6 @@ msgstr "Inspelningar har alltid prioritet"
 
 msgid "Reenter new pin"
 msgstr "Ange ny PIN igen"
-
-msgid "Refresh"
-msgstr "Uppdatera"
 
 msgid "Refresh Rate"
 msgstr "Uppdateringstakt"
@@ -3361,6 +3436,9 @@ msgstr "Sök öst"
 msgid "Search west"
 msgstr "Sök väst"
 
+msgid "Searching for available updates. Please wait..."
+msgstr ""
+
 msgid "Searching for new installed or removed packages. Please wait..."
 msgstr "Sök efter nyinstallerade eller borttagna paket. Vänligen vänta..."
 
@@ -3559,6 +3637,9 @@ msgstr "Visa tv spelare..."
 msgid "Shows the state of your wireless LAN connection.\n"
 msgstr "Visa status på ditt trådlösa LAN anslutning.\n"
 
+msgid "Shutdown"
+msgstr ""
+
 msgid "Shutdown Dreambox after"
 msgstr "Stäng av Dreambox efter"
 
@@ -3632,8 +3713,8 @@ msgstr "Hastigheter för slow motion"
 msgid "Software"
 msgstr "Mjukvara"
 
-msgid "Software manager"
-msgstr "Mjukvaruhanterare"
+msgid "Software management"
+msgstr ""
 
 msgid "Software restore"
 msgstr "Mjukvaruåterskapa"
@@ -3828,6 +3909,9 @@ msgstr "Märke 2"
 msgid "Tags"
 msgstr "Märke 3"
 
+msgid "Temperature and Fan control"
+msgstr ""
+
 msgid "Terrestrial"
 msgstr "Marksänd"
 
@@ -3853,6 +3937,8 @@ msgid ""
 "Thank you for using the wizard.\n"
 "Please press OK to continue."
 msgstr ""
+"Tack för att du använde guiden.\n"
+"Vänligen tryck OK för att forsätta."
 
 msgid ""
 "Thank you for using the wizard. Your box is now ready to use.\n"
@@ -3879,6 +3965,12 @@ msgstr ""
 
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Backupen misslyckades, välj en annan plats för din backup "
+
+#, python-format
+msgid ""
+"The directory %s is not writable.\n"
+"Make sure you select a writable directory instead."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -3987,17 +4079,20 @@ msgstr "Guiden är nu färdig."
 msgid "There are at least "
 msgstr "Det finns minst "
 
+msgid "There are currently no outstanding actions."
+msgstr ""
+
 msgid "There are no default services lists in your image."
 msgstr "Det finns ingen grundservicelista i din image."
 
 msgid "There are no default settings in your image."
 msgstr "Det finns inga grundinställningar i din image."
 
+msgid "There are no updates available."
+msgstr ""
+
 msgid "There are now "
 msgstr "Det är nu "
-
-msgid "There is nothing to be done."
-msgstr "Det finns inget att göra."
 
 msgid ""
 "There might not be enough Space on the selected Partition.\n"
@@ -4169,6 +4264,9 @@ msgstr ""
 "Timer överlappning upptäckt i timers.xml!\n"
 "Vänligen kontrollera!"
 
+msgid "Timer record location"
+msgstr ""
+
 msgid "Timer sanity error"
 msgstr "Timer fel"
 
@@ -4180,6 +4278,9 @@ msgstr "Timer status:"
 
 msgid "Timeshift"
 msgstr "Timeshift"
+
+msgid "Timeshift location"
+msgstr ""
 
 msgid "Timeshift not possible!"
 msgstr "Timeshift inte möjligt!"
@@ -4216,6 +4317,9 @@ msgstr ""
 
 msgid "Today"
 msgstr "Idag"
+
+msgid "Tone Amplitude"
+msgstr ""
 
 msgid "Tone mode"
 msgstr "Tonläge"
@@ -4330,25 +4434,23 @@ msgstr ""
 msgid "Uncommitted DiSEqC command"
 msgstr "Uncommitted DiSEqC kommando"
 
-msgid ""
-"Undo\n"
-"Install"
+msgid "Undo install"
 msgstr ""
-"Ångra\n"
-"Installation"
 
-msgid ""
-"Undo\n"
-"Remove"
+msgid "Undo uninstall"
 msgstr ""
-"Ångra\n"
-"Borttagning"
+
+msgid "Unicable"
+msgstr "Unicable"
 
 msgid "Unicable LNB"
 msgstr "Unicable LNB"
 
 msgid "Unicable Martix"
 msgstr "Unicable Martix"
+
+msgid "Uninstall"
+msgstr ""
 
 msgid "Universal LNB"
 msgstr "Universal LNB"
@@ -4367,6 +4469,9 @@ msgstr "Uppdaterar din mottagares mjukvara"
 
 msgid "Updating finished. Here is the result:"
 msgstr "Uppdatering utförd. Här är resultatet:"
+
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Updating... Please wait... This can take some minutes..."
 msgstr "Uppdaterar... Vänlig vänta... Detta tar några minuter...."
@@ -4426,7 +4531,7 @@ msgid "Use this video enhancement settings?"
 msgstr "Använd denna videoförbättringskonfiguration?"
 
 msgid "Use time of currently running service"
-msgstr ""
+msgstr "Använd tid från närvarande vald service"
 
 msgid "Use usals for this sat"
 msgstr "Använd USALS för denna sat"
@@ -4639,6 +4744,12 @@ msgid ""
 "cleaned up.\n"
 "You can use this wizard to remove some extensions.\n"
 msgstr ""
+"Välkommen till upprensnings guiden.\n"
+"\n"
+"Det har upptäckts att tillgängligt utrymme på interna minnet understiger "
+"2MB.\n"
+"För att uppnå en stabil Dreambox bör interna minnet rensas upp.\n"
+"Du kan använda den här guiden för att ta bort vissa utökningar.\n"
 
 msgid ""
 "Welcome.\n"
@@ -4728,6 +4839,9 @@ msgstr "År"
 msgid "Yes"
 msgstr "Ja"
 
+msgid "Yes to all"
+msgstr ""
+
 msgid "Yes, and delete this movie"
 msgstr "Ja, och ta bort den här filmen."
 
@@ -4776,6 +4890,9 @@ msgstr "Du kan välja, vad vill du ska installeras..."
 
 msgid "You can install this plugin."
 msgstr "Du kan installera den pluginen."
+
+msgid "You can only burn Dreambox recordings!"
+msgstr ""
 
 msgid "You can remove this plugin."
 msgstr "Du kan ta bort den pluginen."
@@ -4884,8 +5001,20 @@ msgid ""
 "\n"
 "Your internet connection is working now.\n"
 "\n"
+msgstr ""
+
+msgid ""
+"Your Dreambox is now ready to use.\n"
+"\n"
+"Your internet connection is working now.\n"
+"\n"
 "Please press OK to continue."
 msgstr ""
+"Din Dreambox är nu klar för användning.\n"
+"\n"
+"Din Internet anslutning fungerar nu.\n"
+"\n"
+"Vänligen tryck OK för att forsätta."
 
 msgid "Your Dreambox will restart after pressing OK on your remote control."
 msgstr "Din Dreambox kommer starta vid tryck på OK på din fjärrkontroll."
@@ -4931,6 +5060,8 @@ msgid ""
 "Your internet connection is not working!\n"
 "Please choose what you want to do next."
 msgstr ""
+"Din Internat anslutning fungerar inte!\n"
+"Vänligen välj vad du vill utföra."
 
 msgid "Your name (optional):"
 msgstr "Ditt namn (valfritt):"
@@ -5002,6 +5133,9 @@ msgstr "håller på att starta"
 
 msgid "activate current configuration"
 msgstr "aktivera nuvarande konfiguration"
+
+msgid "activate network adapter configuration"
+msgstr ""
 
 msgid "add Provider"
 msgstr "lägg till Provider"
@@ -5324,9 +5458,6 @@ msgstr "hjälp..."
 
 msgid "hidden network"
 msgstr "gömt nätverk"
-
-msgid "hidden..."
-msgstr "dold..."
 
 msgid "hide extended description"
 msgstr "dölj utökad beskrivning"
@@ -5718,6 +5849,9 @@ msgstr "visa transponder info"
 msgid "shuffle playlist"
 msgstr "blanda spellista"
 
+msgid "shut down"
+msgstr ""
+
 msgid "shutdown"
 msgstr "stäng av"
 
@@ -5888,6 +6022,20 @@ msgstr "zapped"
 #~ "\n"
 #~ "Enigma2 kommer startas om efter återställningen"
 
+#~ msgid ""
+#~ "\n"
+#~ "Scan for local packages and install them."
+#~ msgstr ""
+#~ "\n"
+#~ "Sök efter lokala paket och installera dem."
+
+#~ msgid ""
+#~ "\n"
+#~ "View, install and remove available or installed packages."
+#~ msgstr ""
+#~ "\n"
+#~ "Visa, installera och ta bort tillgängliga eller installerade paket."
+
 #~ msgid "\"?"
 #~ msgstr "\"?"
 
@@ -5973,6 +6121,9 @@ msgstr "zapped"
 #~ msgid "Connect to the Internet with your local LAN"
 #~ msgstr "Anslut Internet till dit lokala LAN"
 
+#~ msgid "Continue"
+#~ msgstr "Forsätt"
+
 #~ msgid "Copying USB flasher boot image to stick..."
 #~ msgstr "Kopiera USB flash boot image till stick..."
 
@@ -6052,6 +6203,9 @@ msgstr "zapped"
 #~ "Aktivera lokalt nätverk i din Dreambox.\n"
 #~ "\n"
 
+#~ msgid "Encrypted: %s"
+#~ msgstr "Krypterat: %s"
+
 #~ msgid "End"
 #~ msgstr "Slut"
 
@@ -6064,11 +6218,20 @@ msgstr "zapped"
 #~ msgid "Fix USB stick"
 #~ msgstr "Fix USB stick"
 
+#~ msgid "Following tasks will be done after you press continue!"
+#~ msgstr "Följande uppgifter kommer utföras efter du trycker på forsätta!"
+
 #~ msgid "Following tasks will be done after you press continue."
 #~ msgstr "Följande jobb kommer utföras efter du trycker på forsätt."
 
 #~ msgid "Font size"
 #~ msgstr "Font storlek"
+
+#~ msgid "General AC3 delay"
+#~ msgstr "Generisk AC3 fördröjning"
+
+#~ msgid "General PCM delay"
+#~ msgstr "Generisk PCM fördröjning"
 
 #~ msgid "Genre:"
 #~ msgstr "Genre:"
@@ -6092,11 +6255,17 @@ msgstr "zapped"
 #~ "Installera/\n"
 #~ "Ta bort"
 
+#~ msgid "Interface: %s"
+#~ msgstr "Kort: %s"
+
 #~ msgid "Jump to video title 1 (play movie from start)"
 #~ msgstr "Hoppa till video titel 1 (spela film från start)"
 
 #~ msgid "Lets you view/edit files in your Dreambox"
 #~ msgstr "Låter dig visa/ändra filer i din Dreambox"
+
+#~ msgid "Max. Bitrate: %s"
+#~ msgstr "Max. Bitrate: %s"
 
 #~ msgid "Nameserver Setup..."
 #~ msgstr "Namnserver installation..."
@@ -6167,6 +6336,9 @@ msgstr "zapped"
 #~ msgid "Other..."
 #~ msgstr "Annat..."
 
+#~ msgid "Package details for: "
+#~ msgstr "Paketdetaljer för: "
+
 #~ msgid "Partitioning USB stick..."
 #~ msgstr "Partitionera USB stick..."
 
@@ -6205,6 +6377,9 @@ msgstr "zapped"
 
 #~ msgid "Please wait for md5 signature verification..."
 #~ msgstr "Vänligen vänta för md5 signatur verifiering..."
+
+#~ msgid "Plugin manager"
+#~ msgstr "Pluginhanterare"
 
 #~ msgid "Plugin manager help..."
 #~ msgstr "Pluginhanterare hjälp..."
@@ -6247,6 +6422,9 @@ msgstr "zapped"
 #~ msgstr ""
 #~ "Inspelning(ar) pågår eller ska snart påbörjas... verkligen stänga av nu?"
 
+#~ msgid "Refresh"
+#~ msgstr "Uppdatera"
+
 #~ msgid "Remounting stick partition..."
 #~ msgstr "Ommontera stcik partition..."
 
@@ -6282,6 +6460,9 @@ msgstr "zapped"
 
 #~ msgid "Show files from %s"
 #~ msgstr "Visa filer från %s"
+
+#~ msgid "Software manager"
+#~ msgstr "Mjukvaruhanterare"
 
 #~ msgid "Software manager..."
 #~ msgstr "Mjukvaruhanterare..."
@@ -6339,6 +6520,9 @@ msgstr "zapped"
 #~ "starta om och håll 'Ner' knappen på fronten intryckt för att starta .NFI "
 #~ "flasher från stickan!"
 
+#~ msgid "There is nothing to be done."
+#~ msgstr "Det finns inget att göra."
+
 #~ msgid "Title:"
 #~ msgstr "Titel:"
 
@@ -6351,8 +6535,19 @@ msgstr "zapped"
 #~ "USB stickan nu och sätt tillbaka den vid begäran. Tryck OK när du har "
 #~ "tagit ut stickan."
 
-#~ msgid "Unicable"
-#~ msgstr "Unicable"
+#~ msgid ""
+#~ "Undo\n"
+#~ "Install"
+#~ msgstr ""
+#~ "Ångra\n"
+#~ "Installation"
+
+#~ msgid ""
+#~ "Undo\n"
+#~ "Remove"
+#~ msgstr ""
+#~ "Ångra\n"
+#~ "Borttagning"
 
 #~ msgid "Upgrade"
 #~ msgstr "Uppgradera"
@@ -6457,6 +6652,9 @@ msgstr "zapped"
 
 #~ msgid "headline"
 #~ msgstr "rubrik"
+
+#~ msgid "hidden..."
+#~ msgstr "dold..."
 
 #~ msgid "highlighted button"
 #~ msgstr "Vald knapp"
