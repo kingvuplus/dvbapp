@@ -1725,7 +1725,7 @@ class InfoBarAudioSelection:
 			usedKeys = []
 
 			if SystemInfo["CanDownmixAC3"]:
-				flist = [(_("AC3 downmix") + " - " +(_("Off"), _("On"))[config.av.downmix_ac3.value and 1 or 0], "CALLFUNC", self.changeAC3Downmix),
+				flist = [(_("Dolby Digital downmix") + " - " +(_("Off"), _("On"))[config.av.downmix_ac3.value and 1 or 0], "CALLFUNC", self.changeAC3Downmix),
 					((_("Left"), _("Stereo"), _("Right"))[self.audioChannel.getCurrentChannel()], "mode")]
 				usedKeys.extend(["red", "green"])
 				availableKeys.extend(["yellow", "blue"])
@@ -1769,7 +1769,7 @@ class InfoBarAudioSelection:
 		list = choicelist.list
 		t = list[0][1]
 		list[0][1]=(t[0], t[1], t[2], t[3], t[4], t[5], t[6],
-			_("AC3 downmix") + " - " + (_("On"), _("Off"))[config.av.downmix_ac3.value and 1 or 0])
+			_("Dolby Digital downmix") + " - " + (_("On"), _("Off"))[config.av.downmix_ac3.value and 1 or 0])
 		choicelist.setList(list)
 		if config.av.downmix_ac3.value:
 			config.av.downmix_ac3.value = False
