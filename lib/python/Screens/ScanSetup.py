@@ -202,27 +202,25 @@ class CableTransponderSearchSupport:
 
 	def startCableTransponderSearch(self, nim_idx):
 		def GetCommand(nim_idx):
-		    global cable_autoscan_nimtype
-		    try:
-			    nim_name = nimmanager.getNimName(nim_idx)
-			    if nim_name is not None and nim_name != "":
-			        device_id = ""
-			        nim_name = nim_name.split(' ')[-1][4:-1]
-			        if nim_name == 'TT3L10':
-			            try:
-			                device_id = GetDeviceId('TT3L10', nimIdx)
-			                device_id = "--device=%s" % (device_id)
-			            except: device_id = ""
-			            if device_id == "":
-			                return "tda1002x"
-#			        print nimIdx, nim_name, cable_autoscan_nimtype[nim_name], device_id
-			        try:
-				        command = "%s %s" % (cable_autoscan_nimtype[nim_name], device_id)
-				        return command
-			       	except: pass
-		    except Exception, err:
-		    	print "GetCommand ->", err
-		    return "tda1002x"
+			global cable_autoscan_nimtype
+			try:
+				nim_name = nimmanager.getNimName(nim_idx)
+				if nim_name is not None and nim_name != "":
+					device_id = ""
+					nim_name = nim_name.split(' ')[-1][4:-1]
+					if nim_name == 'TT3L10':
+						try:
+							device_id = GetDeviceId('TT3L10', nim_idx)
+							device_id = "--device=%s" % (device_id)
+						except Exception, err:
+							print "GetCommand ->", err
+							device_id = "--device=0"
+#						print nim_idx, nim_name, cable_autoscan_nimtype[nim_name], device_id
+					command = "%s %s" % (cable_autoscan_nimtype[nim_name], device_id)
+					return command
+			except Exception, err:
+				print "GetCommand ->", err
+			return "tda1002x"
 
 		if not self.tryGetRawFrontend(nim_idx):
 			self.session.nav.stopService()
@@ -443,16 +441,14 @@ class TerrestrialTransponderSearchSupport:
 				nim_name = nim_name.split(' ')[-1][4:-1]
 				if nim_name == 'TT3L10':
 					try:
-						device_id = GetDeviceId('TT3L10', nimIdx)
+						device_id = GetDeviceId('TT3L10', nim_idx)
 						device_id = "--device %s" % (device_id)
-					except: device_id = ""
-					if device_id == "":
-						return "ssh108_t2_scan"
-#					print nimIdx, nim_name, terrestrial_autoscan_nimtype[nim_name], device_id
-				try:
-					command = "%s %s" % (terrestrial_autoscan_nimtype[nim_name], device_id)
-					return command
-				except: pass
+					except Exception, err:
+						print "terrestrialTransponderGetCmd ->", err
+						device_id = "--device 0"
+#					print nim_idx, nim_name, terrestrial_autoscan_nimtype[nim_name], device_id
+				command = "%s %s" % (terrestrial_autoscan_nimtype[nim_name], device_id)
+				return command
 		except Exception, err:
 			print "terrestrialTransponderGetCmd ->", err
 		return ""
@@ -1139,7 +1135,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 			elif self.scan_typeterrestrial.value == "complete":
 				skip_t2 = True
 				if nim.isCompatible("DVB-T2"):
-					scan_util = len(self.terrestrialTransponderGetCmd(self.feid)) and True or False
+					scan_util = len(self.terrestrialTransponderGetCmd(nim.slot)) and True or False
 					if scan_util:
 						action = SEARCH_TERRESTRIAL2_TRANSPONDERS
 					else:
